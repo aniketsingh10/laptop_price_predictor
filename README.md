@@ -26,8 +26,8 @@ This is the Flipkart website comprising of different laptops. This page contains
   <li>Warranty</li>
   <li>Price</li>
 </ul>
-So we extract the data from 7 pages so our dataset now consists of the information the 168 different laptops. <br>
-Link to my article: https://towardsdatascience.com/learn-web-scraping-in-15-minutes-27e5ebb1c28e
+So we extract the data from laptops.csv pages so our dataset now consists of the information the 1303 different laptops. <br>
+
 
 # Feature Engineering
 We go through all the features one by one and keep adding new features. I have made the following changes and created new variables:
@@ -41,22 +41,11 @@ Description - Made new columns for the company and graphic card <br>
 # Data Preprocessing
 There are a few columns which are categorical here but they actually contain numerical values.So we need to convert few categorical columns to numerical columns. These are DDR_Version,Generation,Storage_GB,Price.
 
-# Exploratory Data Analysis
-![](images/processor_type.png)   ![](images/diskdrive.png) <br/>
-![](images/RAM_GB.png)
-
 # Model Building
-<li>Traditional Method</li>
-Used scikit-learn library for the Machine Learning tasks. Applied label encoding and converted the categorical variables into numerical ones.Then I splited the data into training and test sets with a test size of 20%. I tried three different models ( Linear Regression, Random Forest Regression, XGBoost) and evaluated them using Mean Absolute Error. 
-
-<li>Automated Method</li>
-Used the auto ML library in python called PyCaret. Compared all the regression models and selected the best model for applied hyperparameter tuning and plotted the various curves.
-
-Link to my article: <a href="https://towardsdatascience.com/leverage-the-power-of-pycaret-d5c3da3adb9b">https://towardsdatascience.com/leverage-the-power-of-pycaret-d5c3da3adb9b</a>
+![Screenshot (90)](https://user-images.githubusercontent.com/97386407/191269612-c0385e02-d243-4ab9-80df-329c6f7f8454.png)
 
 # Model Deployment
 I have deployed the model using Streamlit library and flask framework on Heroku which is a Platform As A Service(PAAS)
-![](images/heroku_app.png)
-![](images/heroku_app2.png)
+![Screenshot (88)](https://user-images.githubusercontent.com/97386407/191269794-f113517e-bf33-4f54-827c-305dba409b21.png)
 
 Web application: <a href="https://lapi-price-predictor.herokuapp.com/">https://lapi-price-predictor.herokuapp.com/</a>
