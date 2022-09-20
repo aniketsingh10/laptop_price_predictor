@@ -2,7 +2,7 @@
 
 <ul>
   <li>Designed a web app that predicts the price of the laptop given the configurations. </li>
-  <li>Scraped the laptops data from flipkart.com using python and BeautifulSoup package</li>
+  <li>Scraped the laptops data from laptop_data.csv</li>
   <li>Developed Linear, Lasso, and Random Forest Regressors using GridsearchCV to get the best model.</li>
   <li>Deployed the Machine Learning model using streamlit library in Heroku using flask</li>
 </ul>
