@@ -59,4 +59,4 @@ I have deployed the model using Streamlit library and flask framework on Heroku 
 ![](images/heroku_app.png)
 ![](images/heroku_app2.png)
 
-Web application: <a href="https://lapi-price-predictor.herokuapp.com/">https://lapi-price-predictor.herokuapp.com//</a>
+Web application: <a href="https://lapi-price-predictor.herokuapp.com/">https://lapi-price-predictor.herokuapp.com/</a>
